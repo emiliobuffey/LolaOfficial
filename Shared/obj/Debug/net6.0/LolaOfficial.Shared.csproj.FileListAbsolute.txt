@@ -1,0 +1,12 @@
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\bin\Debug\net6.0\LolaOfficial.Shared.deps.json
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\bin\Debug\net6.0\LolaOfficial.Shared.dll
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\bin\Debug\net6.0\LolaOfficial.Shared.pdb
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\LolaOfficial.Shared.csproj.AssemblyReference.cache
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\LolaOfficial.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\LolaOfficial.Shared.AssemblyInfoInputs.cache
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\LolaOfficial.Shared.AssemblyInfo.cs
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\LolaOfficial.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\LolaOfficial.Shared.dll
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\refint\LolaOfficial.Shared.dll
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\LolaOfficial.Shared.pdb
+C:\Users\ebuffey\VSCODE\LolaOfficial\Shared\obj\Debug\net6.0\ref\LolaOfficial.Shared.dll
