@@ -8,7 +8,7 @@ namespace Server.Controllers
 
     using Microsoft.AspNetCore.Mvc;
 
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -29,7 +29,7 @@ namespace Server.Controllers
         }
 
         //get a single user
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public ActionResult<User> GetActionById(int id)
         {
             // find user by id if user.id == to id
@@ -63,6 +63,7 @@ namespace Server.Controllers
         {
             User oldUser = _userContext.Users.FirstOrDefault(user => user.Id == id);
             _userContext.Users.Remove(oldUser);
+            _userContext.SaveChanges();
         }
     }
 }

@@ -11,8 +11,9 @@ builder.Services.AddRazorPages();
 
 
 //#################################################################
-builder.Services.AddDbContext<UserContext>(options =>
-    options.UseSqlite("Data Source=Lola.db"));
+var db = builder.Configuration.GetConnectionString("Default");
+builder.Services.AddDbContext<UserContext>(options => options.UseSqlite(db));
+
 //#################################################################
 
 
