@@ -6,38 +6,89 @@
 
 <h1>Users</h1>
 
-@if (users == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Email</th>
-                <th>Password</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var user in users)
+
+<div class="row">
+    <div class="col col-6">
+        <input type="email" @bind-value="newUser.Email" class="form-control mb-3" placeholder="Email"/>
+        <input type="password" @bind-value="newUser.Password" class="form-control mb-3" placeholder="Password"/>
+        <button class="btn btn-block btn-primary" @onclick="SubmitUser">Submit</button>
+
+
+        @if (users == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in users)
+                    {
+                        <tr>
+                            <td>@user.Id</td>
+                            <td>@user.Email</td>
+                            <td>@user.Password</td>
+                            <td>
+                                <button @onclick="@(()=>GetUser(@user.Id))" class="btn btn-sm btn-primary" >Edit</button>
+                            </td>
+                            <td>
+                                <button @onclick="@(()=>DeleteUser(@user.Id))" class="btn btn-sm btn-primary">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+        @code {
+            private User[]? users;
+            private User newUser = new User();
+            private bool edit = false;
+//#######################################################################################################
+// getting all users
+            protected override async Task OnInitializedAsync()
             {
-                <tr>
-                    <td>@user.Id</td>
-                    <td>@user.Email</td>
-                    <td>@user.Password</td>
-                </tr>
+                users = await Http.GetFromJsonAsync<User[]>("user");
             }
-        </tbody>
-    </table>
-}
-
-@code {
-    private User[]? users;
-
-    protected override async Task OnInitializedAsync()
-    {
-        users = await Http.GetFromJsonAsync<User[]>("api/user");
-    }
-}
+//#######################################################################################################
+// add or edit user
+            private async Task SubmitUser(){
+                if(edit == false)
+                {
+                    await Http.PostAsJsonAsync<User>("user",newUser);
+                    await OnInitializedAsync();
+                    newUser = new User();
+                    Console.WriteLine("user or email was null");
+                }
+                else
+                {
+                    await Http.PutAsJsonAsync<User>("user/"+newUser.Id,newUser);
+                    await OnInitializedAsync();
+                    edit = false;
+                    newUser = new User();
+                }
+            }
+//#######################################################################################################
+// delete user
+            private async Task DeleteUser(int id){
+                await Http.DeleteAsync("user/"+id.ToString());
+                await OnInitializedAsync();
+            }
+//#######################################################################################################
+//get user id to edit user
+            private async Task GetUser(int id){
+                newUser = await Http.GetFromJsonAsync<User>("user/"+id.ToString());
+                edit = true;
+             }
+        }
+    </div>
+</div>
