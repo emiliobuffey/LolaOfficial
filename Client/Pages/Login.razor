@@ -1,0 +1,43 @@
+@layout LoginLayout
+@page "/"
+@using LolaOfficial.Client.Services
+@inject ILoginClient _loginClient
+@inject NavigationManager _navigationManager
+
+@using LolaOfficial.Shared
+@inject HttpClient Http;
+
+<h2>Login</h2>
+
+<div class="row">
+    <div class="col col-6">
+         <input type="email" @bind-value="_loginClient.Email" class="form-control mb-3" placeholder="Email"/>
+        <input type="password" @bind-value="_loginClient.Password" class="form-control mb-3" placeholder="Password"/>
+        <button class="btn btn-block btn-primary" @onclick="LoginUser" >Login</button>
+    </div>
+</div>
+
+@code
+{
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; } 
+
+    private async Task LoginUser()
+    {
+        System.Console.WriteLine("login in button hit");
+        var user1 = await _loginClient.LoginUser();
+        if (user1.Email != null) 
+        {
+            System.Console.WriteLine("User is not null");
+            @* var authState = await authenticationStateTask;
+            var user = authState.User; *@
+            var user = (await authenticationStateTask).User;
+
+            if (user.Identity.IsAuthenticated != false)
+            {
+                System.Console.WriteLine("User identified");
+                _navigationManager.NavigateTo("/home", true);
+            }
+        }
+    }
+}

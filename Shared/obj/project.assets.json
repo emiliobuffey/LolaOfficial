@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj",
       "projectName": "LolaOfficial.Shared",
-      "projectPath": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj",
+      "projectPath": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj",
       "packagesPath": "C:\\Users\\ebuffey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
