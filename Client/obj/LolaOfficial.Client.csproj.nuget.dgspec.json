@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Client\\LolaOfficial.Client.csproj": {}
+    "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Client\\LolaOfficial.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Client\\LolaOfficial.Client.csproj": {
+    "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Client\\LolaOfficial.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Client\\LolaOfficial.Client.csproj",
+        "projectUniqueName": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Client\\LolaOfficial.Client.csproj",
         "projectName": "LolaOfficial.Client",
-        "projectPath": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Client\\LolaOfficial.Client.csproj",
+        "projectPath": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Client\\LolaOfficial.Client.csproj",
         "packagesPath": "C:\\Users\\ebuffey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Client\\obj\\",
+        "outputPath": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj": {
-                "projectPath": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj"
+              "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj": {
+                "projectPath": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj"
               }
             }
           }
@@ -47,14 +47,30 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[7.0.0-preview.5.22303.8, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -87,14 +103,14 @@
         }
       }
     },
-    "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj": {
+    "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj",
         "projectName": "LolaOfficial.Shared",
-        "projectPath": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj",
+        "projectPath": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\LolaOfficial.Shared.csproj",
         "packagesPath": "C:\\Users\\ebuffey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

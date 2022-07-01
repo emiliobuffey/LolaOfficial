@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using LolaOfficial.Server.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using LolaOfficial.Client.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +14,11 @@ builder.Services.AddRazorPages();
 
 //#################################################################
 var db = builder.Configuration.GetConnectionString("Default");
-builder.Services.AddDbContext<UserContext>(options => options.UseSqlite(db));
+builder.Services.AddDbContext<UserContext>(options => options.UseSqlite(db));   // connection to db
+
+//enabling serverside auth
+builder.Services.AddAuthentication(options => 
+options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(); 
 
 //#################################################################
 
@@ -37,6 +43,8 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication(); // enables authentication capabilities
 
 
 app.MapRazorPages();

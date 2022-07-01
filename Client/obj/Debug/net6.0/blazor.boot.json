@@ -9,6 +9,7 @@
     "assembly": {
       "Microsoft.AspNetCore.Authorization.dll": "sha256-i8erNm9\/ug+tjL2wTfd+HykmjYrmFhvrwwRNHqkahl4=",
       "Microsoft.AspNetCore.Components.dll": "sha256-27ExXdI7a7yGnPr9shnwet9criuoLLMCTJDSTm4TQ9E=",
+      "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-EgbuNytHJcfB6hz0Vj+PBSHYjYTyXkaeXTY37JvHfZ4=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-tc\/Tc3X1BHL58Qq+EiKqndDuweTp46BVc5QSeTLpxdc=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-evNKSqXvq7sc3aTeo0t5TM5ARZ8EsyyakDX4WbupbxE=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-qG\/nt5uT54Cw6ri+DwH54ie2XR9ywyahvm+l1EEijOQ=",
@@ -23,6 +24,7 @@
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-7PzvEcQvpK1c8tTX9VPI8AF+XrekqbAytNBQXJjvTvQ=",
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-sXujvGMZDgBBZ9HqfcEq9XsM0pvwyhPt60NA9qLDzGI=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-viiXOG0fwhWobT0TQ1ZOJiZBdRvYRlWbDtjz+6d8sQI=",
+      "Microsoft.Extensions.Http.dll": "sha256-K5\/O91dt69IHKav69ftn+7DKPmnzkipTvwM4Sd4Zres=",
       "Microsoft.Extensions.Logging.dll": "sha256-GDZQCBtVHfrZZ6fL95lGoinLeUWLjQShLbfESwO7mrc=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-w+c+xfLh8QIAwluhugyPc8sPvAmmIC\/UTxnugT7Oido=",
       "Microsoft.Extensions.Options.dll": "sha256-eGESyy9mRu8RcCGajAu4E8nxSmeB5nxiZkFPVaZ5Vl0=",
@@ -196,15 +198,15 @@
       "mscorlib.dll": "sha256-zNVxhWqav+Wvwc8mjOqsl40bhVLw78MhgITrphqoROc=",
       "netstandard.dll": "sha256-yQ7oiuGXRX47V21EibXbfTPXOkJGOgCJhW9YF6e4hw0=",
       "System.Private.CoreLib.dll": "sha256-Ug2\/rd8Ck7Dls6uaZNmrqc7EvE8f41iX96qdX57LStQ=",
-      "LolaOfficial.Shared.dll": "sha256-ZPNoHu7HOMW5H8e8\/zf0pHog1UX\/6Fp8\/FvqwbMyKt8=",
-      "LolaOfficial.Client.dll": "sha256-kiSf7hyqMqCuH3cZeZ4cioDj4A91R9r3wf2VFcYS\/AE="
+      "LolaOfficial.Shared.dll": "sha256-aE7cxH\/o17rQo3sLLfyzRzmU2VDPf2Xwx60HVf9PUYo=",
+      "LolaOfficial.Client.dll": "sha256-4Hb8oLEiWz933ijONrjoRMGywRMz49FEVhercZfJk4c="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "LolaOfficial.Shared.pdb": "sha256-qj3AXdXibAz8M4lZIMlDJInUMPQpmykKtupxz+HmQs8=",
-      "LolaOfficial.Client.pdb": "sha256-jr+IzjG5Z4x5La93bs6WPjs0CzPLP\/6iFZLLlxOX+7Q="
+      "LolaOfficial.Shared.pdb": "sha256-7xUgzAdh2JauJbfcbH3VaDa6sdPN+kultNCdhqKRtVc=",
+      "LolaOfficial.Client.pdb": "sha256-s6Mfa7wD1ReMrgNYKfT8S15Uwr6y2mbrlO\/IZYqTxTI="
     },
     "runtime": {
       "dotnet.6.0.6.1ebu9gh23m.js": "sha256-zJXgw\/tAzTVOXksPhtpZVT12vxHC7S9mQyBRM36dwD0=",

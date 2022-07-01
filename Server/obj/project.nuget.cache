@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L/72Is+n072QrQHYYly/0GNMiU/JSPqqtVd6t7zdD1Npq6yQYN5z1guigZ19pv5+A9gnvrevJ0zGS6W2DUG50g==",
+  "dgSpecHash": "c1nn1VPeqC3wAqV1LGHgj2YHkF1oSxCj7gf/UadLUs3odPMmgGkRjLbB6nwlsnIK2MKlkSBl32eV/GwZae0RNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ebuffey\\VSCODE\\LolaOfficial\\Server\\LolaOfficial.Server.csproj",
+  "projectFilePath": "C:\\Users\\ebuffey\\VSCODE\\LOLA\\Authentication\\LolaOfficial\\Server\\LolaOfficial.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ebuffey\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.6\\microsoft.aspnetcore.authorization.6.0.6.nupkg.sha512",
@@ -12,6 +12,7 @@
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.6\\microsoft.aspnetcore.components.forms.6.0.6.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.6\\microsoft.aspnetcore.components.web.6.0.6.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.6\\microsoft.aspnetcore.components.webassembly.6.0.6.nupkg.sha512",
+    "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.0-preview.5.22303.8\\microsoft.aspnetcore.components.webassembly.authentication.7.0.0-preview.5.22303.8.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\6.0.6\\microsoft.aspnetcore.components.webassembly.server.6.0.6.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.6\\microsoft.aspnetcore.metadata.6.0.6.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.6\\microsoft.data.sqlite.core.6.0.6.nupkg.sha512",
@@ -35,6 +36,7 @@
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.extensions.http\\6.0.0\\microsoft.extensions.http.6.0.0.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\ebuffey\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
