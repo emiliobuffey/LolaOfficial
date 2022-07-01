@@ -21,6 +21,7 @@ namespace LolaOfficial.Client
 
         public async override Task<AuthenticationState> GetAuthenticationStateAsync()
         {
+           #nullable enable
             User? currentUser = await _httpClient.GetFromJsonAsync<User>("user/getcurrentuser");
 
             if (currentUser != null && currentUser.Email != null)

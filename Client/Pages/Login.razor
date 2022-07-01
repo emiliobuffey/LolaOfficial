@@ -29,11 +29,11 @@
         if (user1.Email != null) 
         {
             System.Console.WriteLine("User is not null");
-            @* var authState = await authenticationStateTask;
-            var user = authState.User; *@
+            //var authState = await authenticationStateTask;
+            //var user = authState.User; 
             var user = (await authenticationStateTask).User;
 
-            if (user.Identity.IsAuthenticated != false)
+            if (user.Identity.IsAuthenticated)
             {
                 System.Console.WriteLine("User identified");
                 _navigationManager.NavigateTo("/home", true);
